@@ -73,10 +73,10 @@ def valide():
 
 width = 650
 height = 600
-image_avant = PhotoImage(file= "C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/Montage_coulisse_avant.png").zoom(1).subsample(2)
-image_arriere = PhotoImage(file= "C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/Montage_coulisse_arriere.png").zoom(1).subsample(2)
-image_attente = PhotoImage(file= "C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/attente.png").zoom(1).subsample(2)
-image_EPI = PhotoImage(file= "C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/EPI.png").zoom(1).subsample(1)
+image_avant = PhotoImage(file= "Montage_coulisse_avant.png").zoom(1).subsample(2)
+image_arriere = PhotoImage(file= "Montage_coulisse_arriere.png").zoom(1).subsample(2)
+image_attente = PhotoImage(file= "attente.png").zoom(1).subsample(2)
+image_EPI = PhotoImage(file= "EPI.png").zoom(1).subsample(1)
 
 def retour():
     global var_EPI
@@ -98,7 +98,7 @@ canvas.grid(row = 1, column = 0, sticky = W, padx = 25, rowspan = 2)
 
 
 # """Logo ECAM Rennes"""
-image_logo_ECAM = PhotoImage(file= "C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/Logo_ECAM_Rennes.png").zoom(1).subsample(15)
+image_logo_ECAM = PhotoImage(file= "Logo_ECAM_Rennes.png").zoom(1).subsample(15)
 my_label = Label(root, image = image_logo_ECAM, bg='#7F8FA6')
 # my_label.place(x=1, y=500)
 my_label.grid(row = 2, column = 1)
