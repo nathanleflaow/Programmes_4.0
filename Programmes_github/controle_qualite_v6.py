@@ -45,7 +45,6 @@ root = Tk()
 root.title("Contrôle qualité")
 root.config(bg='#7F8FA6')
 root.geometry("1024x744")
-# root.iconbitmap("C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/Logo_ECAM_Rennes.ico")
 
 root.columnconfigure(0, weight = 2)
 root.columnconfigure(1, weight = 1)
@@ -115,11 +114,11 @@ def rebut():
 
 width = 650
 height = 600
-image_avant = PhotoImage(file= "C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/porte_avant_qualite.png").zoom(1).subsample(1)
-image_arriere = PhotoImage(file= "C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/porte_arriere_qualite.png").zoom(1).subsample(1)
-image_attente = PhotoImage(file= "C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/attente.png").zoom(1).subsample(1)
-image_portiere_validee = PhotoImage(file= "C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/portiere_validee.png").zoom(1).subsample(1)
-image_EPI = PhotoImage(file= "C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/EPI.png").zoom(1).subsample(1)
+image_avant = PhotoImage(file= "porte_avant_qualite.png").zoom(1).subsample(1)
+image_arriere = PhotoImage(file= "porte_arriere_qualite.png").zoom(1).subsample(1)
+image_attente = PhotoImage(file= "attente.png").zoom(1).subsample(1)
+image_portiere_validee = PhotoImage(file= "portiere_validee.png").zoom(1).subsample(1)
+image_EPI = PhotoImage(file= "EPI.png").zoom(1).subsample(1)
 
 def retour():
     global var_EPI
@@ -142,7 +141,7 @@ canvas.grid(row = 1, column = 0, sticky = W, padx = 25, rowspan = 3)
 
 
 # """Logo ECAM Rennes"""
-image_logo_ECAM = PhotoImage(file= "C:/Users/natha/Desktop/ECAM/ECAM/Usine_4.0/Programmes_Python/Main_program/Logo_ECAM_Rennes.png").zoom(1).subsample(14)
+image_logo_ECAM = PhotoImage(file= "Logo_ECAM_Rennes.png").zoom(1).subsample(14)
 my_label = Label(root, image = image_logo_ECAM, bg='#7F8FA6')
 # my_label.place(x=1, y=500)
 my_label.grid(row = 3, column = 1, sticky = "SE")
