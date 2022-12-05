@@ -65,6 +65,7 @@ def update_image():
 
 def valide():
     global liste_message
+    client.connect(mqttBroker)
     client.publish("ECAM_coulisse", liste_message[0] + ";" + get_time())
     print("Publié : " + liste_message[0] + ";" + get_time())
     del liste_message[0]
