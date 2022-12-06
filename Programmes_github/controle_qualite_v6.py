@@ -119,7 +119,7 @@ image_avant = PhotoImage(file= "porte_avant_qualite.png").zoom(1).subsample(1)
 image_arriere = PhotoImage(file= "porte_arriere_qualite.png").zoom(1).subsample(1)
 image_attente = PhotoImage(file= "attente.png").zoom(1).subsample(1)
 image_portiere_validee = PhotoImage(file= "portiere_validee.png").zoom(1).subsample(1)
-image_EPI = PhotoImage(file= "EPI.png").zoom(1).subsample(1)
+image_EPI = PhotoImage(file= "EPI.png").zoom(1).subsample(2)
 
 def retour():
     global var_EPI
